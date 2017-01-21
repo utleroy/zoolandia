@@ -14,7 +14,7 @@ namespace Zoolandia.Animals
             Dog.SignatureNoise = "Bark";
             Dog.Size = "large";
 
-            var Cat = new Animal();
+            var Cat = new Wild();
             Cat.Type = "Calico";
             Cat.Color = "Grey";
             Cat.Name = "Charlie";
@@ -22,6 +22,9 @@ namespace Zoolandia.Animals
             Cat.Size = "small";
 
             Console.WriteLine($"I have a {Dog.Size} {Dog.Type} dog named {Dog.Name}. He can {Dog.SignatureNoise} on command. He is {Dog.Color}. I also have a {Cat.Size} {Cat.Type} cat named {Cat.Name}. She will only {Cat.SignatureNoise} when she's hungry. She is {Cat.Color}.");
+
+            Dog.BrandOfFood();
+            Cat.BrandOfFood();
         }
     }
 }
